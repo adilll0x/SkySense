@@ -1,4 +1,4 @@
-<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/31d35d7f-c170-430e-9c1e-c78dbc780414" /># ☁️ SkySense: Simple Modern Android Weather App With Core Concepts
+# ☁️ SkySense: Simple Modern Android Weather App With Core Concepts
 
 SkySense is a simple, elegant mobile application built using Jetpack Compose to deliver real-time current weather conditions for any queried location globally. It follows modern Android development practices, ensuring a clean architecture and a responsive user experience.
 its good for Understanding the Core Concepts of Android
