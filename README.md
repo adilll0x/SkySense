@@ -1,4 +1,4 @@
-# ☁️ SkySense: Simple Modern Android Weather App With Core Concepts
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/31d35d7f-c170-430e-9c1e-c78dbc780414" /># ☁️ SkySense: Simple Modern Android Weather App With Core Concepts
 
 SkySense is a simple, elegant mobile application built using Jetpack Compose to deliver real-time current weather conditions for any queried location globally. It follows modern Android development practices, ensuring a clean architecture and a responsive user experience.
 its good for Understanding the Core Concepts of Android
@@ -102,3 +102,7 @@ Follow these steps to get SkySense running locally:
 * **Query Parameters:** `key`, `q` (for query/city name)
 
 * *(Note: To extend features like forecasts or change units, you would update the `WeatherApi` interface and the `WeatherModel` data class.)*
+  ![sky3](https://github.com/user-attachments/assets/f64e70bf-9413-4936-a65d-a0ebd9eb6358)
+![sky1](https://github.com/user-attachments/assets/064dbc53-192b-4e2d-b480-94b90bb6960d)
+![sky](https://github.com/user-attachments/assets/2a8610c1-15c0-4494-91b9-83c1b643e3f6)
+
