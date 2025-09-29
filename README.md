@@ -102,7 +102,17 @@ Follow these steps to get SkySense running locally:
 * **Query Parameters:** `key`, `q` (for query/city name)
 
 * *(Note: To extend features like forecasts or change units, you would update the `WeatherApi` interface and the `WeatherModel` data class.)*
-  ![sky3](https://github.com/user-attachments/assets/f64e70bf-9413-4936-a65d-a0ebd9eb6358)
-![sky1](https://github.com/user-attachments/assets/064dbc53-192b-4e2d-b480-94b90bb6960d)
-![sky](https://github.com/user-attachments/assets/2a8610c1-15c0-4494-91b9-83c1b643e3f6)
+<p align="center">
+<!-- Image 1: Search/Location Input -->
+<img src="https://github.com/user-attachments/assets/064dbc53-192b-4e2d-b480-94b90bb6960d" width="32%" alt="Search Screen and Current Location" />
+&nbsp;
+<!-- Image 2: Detailed Weather View -->
+<img src="https://github.com/user-attachments/assets/2a8610c1-15c0-4494-91b9-83c1b643e3f6" width="32%" alt="Detailed Weather Metrics Card" />
+&nbsp;
+<!-- Image 3: Key Metrics Card -->
+<img src="https://github.com/user-attachments/assets/f64e70bf-9413-4936-a65d-a0ebd9eb6358" width="32%" alt="Weather Details and Key Metrics" />
+</p>
+  
+
+
 
