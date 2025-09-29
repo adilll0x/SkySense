@@ -1,6 +1,5 @@
 package com.example.skysense
 
-import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,6 +12,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -26,6 +26,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -84,6 +85,8 @@ fun WeatherPage(viewModel: WeatherViewModel)
         }
 
     }
+
+
 }
 
 
@@ -127,7 +130,54 @@ fun WeatherDetails(data : WeatherModel){
             textAlign = TextAlign.Center,
             color = Color.Gray
         )
+        Spacer(modifier = Modifier.height(16.dp))
+        Card {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ){
+                Row (
 
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ){
+                    WeatherKeyVal("Humidity",data.current.humidity.toString())
+                    WeatherKeyVal("Wind Speed",data.current.wind_kph.toString()+" km/h")
+
+                }
+                Row (
+
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ){
+                    WeatherKeyVal("Humidity",data.current.temp_c.toString())
+                    WeatherKeyVal("Uv",data.current.uv.toString())
+
+                }
+                Row (
+
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ){
+                    WeatherKeyVal("Local time",data.location.localtime.split(" ")[1])
+                    WeatherKeyVal("Local Date",data.location.localtime.split(" ")[0])
+
+                }
+            }
+        }
     }
+}
+
+
+@Composable
+fun WeatherKeyVal(key : String ,value : String){
+
+    Column (
+        modifier = Modifier.padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Text(text = value, fontSize = 24.sp, fontWeight = FontWeight.Bold)
+        Text(text = key, fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = Color.Gray)
+    }
+
 
 }
